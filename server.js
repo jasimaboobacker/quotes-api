@@ -5,7 +5,7 @@ var Quote = require('./models/quotes');
 var mongoose = require('mongoose');
 
 //mongoose.connect('mongodb://localhost:27017/quotes');
-mongoose.connect('mongodb://jasim:jasim@ds037095.mongolab.com:37095/heroku_c9dkvkp2');
+mongoose.connect('mongodb://jasim:jasim@ds037095.mongolab.com:37095/heroku_ls58mq68');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
