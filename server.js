@@ -18,10 +18,13 @@ router.get('/',function(req,res){
 });
 
 router.route('/quotes').post(function(req,res){
+
+console.log("Posted Message - "+req.body.quote+"  "+req.body.author);
   var quotes = new Quote();
   quotes.quote = req.body.quote;
   quotes.author = req.body.author;
   quotes.save(function(err){
+conolse.log("Saving - data");
     if(err)
       res.send(err);
     res.json({message:"Qoute Saved"});
@@ -29,6 +32,7 @@ router.route('/quotes').post(function(req,res){
 
 })
 .get(function(req, res) {
+      console.log("Get Data");
       Quote.find(function(err, quotes) {
           if (err)
               res.send(err);
