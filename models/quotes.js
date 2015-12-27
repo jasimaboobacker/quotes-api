@@ -3,7 +3,8 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var QuoteSchema = new Schema({
-  quote : String
+  quote : String,
+  author : String
 });
 
 
