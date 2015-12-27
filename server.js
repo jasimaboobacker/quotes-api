@@ -26,7 +26,7 @@ console.log("Posted Message - "+req.body.quote+"  "+req.body.author);
   quotes.quote = req.body.quote;
   quotes.author = req.body.author;
   quotes.save(function(err){
-conolse.log("Saving - data");
+console.log("Saving - data");
     if(err)
       res.send(err);
     res.json({message:"Qoute Saved"});
