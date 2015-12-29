@@ -89,7 +89,7 @@ console.log("Saving - data");
 
 })
 .get(function(req, res) {
-      console.log("Get Data");
+      console.log("Get Data fsadsafsdfas");
       Quote.random(function(err, quotes) {
           if (err)
               res.send(err);

@@ -4,7 +4,8 @@ var Schema = mongoose.Schema;
 
 var QuoteSchema = new Schema({
   quote : String,
-  author : String
+  author : String,
+  year:String
 });
 
 
